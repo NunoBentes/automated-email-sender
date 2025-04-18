@@ -1,0 +1,14 @@
+[
+    {
+        "email": "recipient1@example.com",
+        "name": "Recipient One"
+    },
+    {
+        "email": "recipient2@example.com",
+        "name": "Recipient Two"
+    },
+    {
+        "email": "recipient3@example.com",
+        "name": "Recipient Three"
+    }
+]
