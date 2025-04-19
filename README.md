@@ -142,7 +142,7 @@ python src/email-sender.py
 Hello Jane Smith,
 
 This is an automated email sent by John Smith.
-Thank you for being a valued customer .
+Thank you for being a valued customer.
 
 Best regards,
 John Smith
