@@ -75,7 +75,7 @@ EMAIL_BODY="Hello {recipient_name},\n
 This is an automated email sent by {sender_name}.
 Thank you for being a valued customer.\n
 Best regards,
-{sender_name} - {date}"
+{sender_name}"
 ```
 
 ### 4. **Prepare Email Data**
