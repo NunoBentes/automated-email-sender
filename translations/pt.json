@@ -1,0 +1,18 @@
+{
+    "EMAIL_MODE_INVALID": "EMAIL_MODE deve ser 'json' ou 'csv'.",
+    "EMAIL_SMTP_PORT_INVALID": "EMAIL_SMTP_PORT deve ser um número inteiro positivo válido.",
+    "EMAIL_USE_TLS_INVALID": "EMAIL_USE_TLS deve ser um valor booleano (true/false).",
+    "SENDER_NAME_INVALID": "SENDER_NAME deve ser uma string.",
+    "EMAIL_SUBJECT_INVALID": "EMAIL_SUBJECT deve ser uma string.",
+    "EMAIL_BODY_INVALID": "EMAIL_BODY deve ser uma string.",
+    "EMAIL_DATA_FILE_NOT_FOUND": "O arquivo de dados de email {file} não foi encontrado.",
+    "EMAIL_DATA_FILE_EMPTY": "O arquivo de dados de email {file} está vazio.",
+    "SMTP_CONFIG_MISSING": "As variáveis de configuração SMTP estão ausentes ou inválidas.",
+    "SMTP_AUTH_ERROR": "Erro de autenticação: Não foi possível enviar o email para {recipient_email}. Verifique suas credenciais SMTP.",
+    "SMTP_CONNECTION_ERROR": "Erro de conexão SMTP: {error}",
+    "SMTP_ERROR": "Erro SMTP ao enviar email para {recipient_email}: {error}.",
+    "UNEXPECTED_ERROR": "Erro inesperado ao enviar email para {recipient_email}: {error}.",
+    "SCRIPT_STOPPED_ERROR": "O script foi interrompido devido a um erro: {error}.",
+    "EMAIL_SENT_SUCCESS": "Email enviado com sucesso para {recipient_email}.",
+    "ALL_EMAILS_SENT": "Todos os emails foram enviados. Tarefa concluída."
+}

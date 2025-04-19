@@ -1,5 +1,1 @@
-dotenv
-smtplib
-email
-json
-os
+python-dotenv
