@@ -141,11 +141,11 @@ python src/email-sender.py
 ```
 Hello Jane Smith,
 
-This is an automated email sent by Nuno Bentes.
+This is an automated email sent by John Smith.
 Thank you for being a valued customer.
 
 Best regards,
-Nuno Bentes - 2025-04-19
+John Smith
 ```
 
 ---
