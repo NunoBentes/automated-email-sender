@@ -42,7 +42,6 @@ def validate_env_variables(SMTP_SERVER, SMTP_PORT, SENDER_EMAIL, SENDER_PASSWORD
     # Check if the email mode is valid
     if EMAIL_MODE not in ["json", "csv"]:
         raise ValueError(translations["EMAIL_MODE_INVALID"])
-    
 
     # Check if the send email interval is a positive integer
     if SEND_EMAIL_INTERVAL <= 0:
