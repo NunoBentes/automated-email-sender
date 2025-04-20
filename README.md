@@ -1,5 +1,7 @@
 # Automated Email Sender
 
+![Automated Email Sender](assets/example-image.png "Automated Email Sender")
+
 A Python script for sending automated emails at regular intervals using SMTP. The script supports both JSON and CSV formats for recipient data and includes multi-language support for error messages and logs.
 
 ---
