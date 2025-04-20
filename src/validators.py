@@ -30,14 +30,16 @@ def validate_smtp_configuration(SMTP_SERVER, SMTP_PORT, USE_TLS, SENDER_EMAIL, S
         raise ValueError(translations["SMTP_CONNECTION_ERROR"].format(error=str(e)))
 
 # Validate environment variables
-def validate_env_variables(SMTP_SERVER, SMTP_PORT, SENDER_EMAIL, SENDER_PASSWORD, EMAIL_MODE, SEND_EMAIL_INTERVAL, USE_TLS, SENDER_NAME, EMAIL_SUBJECT, EMAIL_BODY, EMAIL_DATA_CSV, EMAIL_DATA_JSON):
+def validate_env_variables(SMTP_SERVER, SMTP_PORT, SENDER_EMAIL, SENDER_PASSWORD, EMAIL_MODE,
+                           SEND_EMAIL_INTERVAL, USE_TLS, SENDER_NAME, EMAIL_SUBJECT, 
+                           EMAIL_BODY, EMAIL_DATA_CSV, EMAIL_DATA_JSON):
     # Load language from .env
     language = os.getenv("LANGUAGE", "en")  # Default to English if not set
     translations = load_translations(language)
 
     # Check if required environment variables are set
     if not all([SMTP_SERVER, SMTP_PORT, SENDER_EMAIL, SENDER_PASSWORD]):
-        raise ValueError(translations["EMAIL_SMTP_PORT_INVALID"])
+        raise ValueError(translations["ENV_VARS_REQUIRED"])  # New key
 
     # Check if the email mode is valid
     if EMAIL_MODE not in ["json", "csv"]:
@@ -45,11 +47,11 @@ def validate_env_variables(SMTP_SERVER, SMTP_PORT, SENDER_EMAIL, SENDER_PASSWORD
 
     # Check if the send email interval is a positive integer
     if SEND_EMAIL_INTERVAL <= 0:
-        raise ValueError(translations["EMAIL_SMTP_PORT_INVALID"])
+        raise ValueError(translations["EMAIL_INTERVAL_INVALID"])  # New key
 
     # Check if the SMTP port is a valid integer
     if not isinstance(SMTP_PORT, int) or SMTP_PORT <= 0:
-        raise ValueError(translations["EMAIL_SMTP_PORT_INVALID"])
+        raise ValueError(translations["SMTP_PORT_INVALID"])  # New key
 
     # Check if the TLS setting is a boolean
     if not isinstance(USE_TLS, bool):

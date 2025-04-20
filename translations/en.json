@@ -14,5 +14,8 @@
     "UNEXPECTED_ERROR": "Unexpected error while sending email to {recipient_email}: {error}.",
     "SCRIPT_STOPPED_ERROR": "Script stopped due to an error: {error}.",
     "EMAIL_SENT_SUCCESS": "Email successfully sent to {recipient_email}.",
-    "ALL_EMAILS_SENT": "All emails have been sent. Task concluded."
+    "ALL_EMAILS_SENT": "All emails have been sent. Task concluded.",
+    "ENV_VARS_REQUIRED": "Required environment variables are missing or invalid.",
+    "EMAIL_INTERVAL_INVALID": "SEND_EMAIL_INTERVAL must be a positive integer.",
+    "SMTP_PORT_INVALID": "EMAIL_SMTP_PORT must be a valid positive integer."
 }
